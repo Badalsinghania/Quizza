@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127457560798",
+    "project_id": "quizza-a6e30",
+    "storage_bucket": "quizza-a6e30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127457560798:android:bbb62405ce0a3ec6e51a4f",
+        "android_client_info": {
+          "package_name": "com.english.quizza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127457560798-h0a7rlj5kbm5o73po56cl0ek1jgnqsqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAySjwpStfxWyaZGdSRsxi1tqYoY837OXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127457560798-h0a7rlj5kbm5o73po56cl0ek1jgnqsqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

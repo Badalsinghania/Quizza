@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:background="@drawable/background_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="116dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+   <!-- <View
+        android:id="@+id/view9"
+        android:layout_width="363dp"
+        android:layout_height="200dp"
+        android:background="@drawable/uncolred_roundbox"
+        android:backgroundTint="#C1BFBF"
+        app:layout_constraintEnd_toStartOf="@+id/emaillbox"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toEndOf="@+id/nameebox"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />-->
+
+    <TextView
+        android:id="@+id/nameebox"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/textbox"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorpurple"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/emaillbox"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/emaillbox"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <TextView
+        android:id="@+id/emaillbox"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textbox"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorpurple"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameebox" />
+
+   <!-- <TextView
+        android:id="@+id/verifymsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Email not verified."
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/editprofile"
+        app:layout_constraintStart_toStartOf="@+id/editprofile"
+        app:layout_constraintTop_toBottomOf="@+id/editprofile" />-->
+
+   <!-- <Button
+        android:id="@+id/resendcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbutton"
+        android:text="Verify now"
+        android:visibility="gone"
+        app:backgroundTint="#9E3659"
+        app:layout_constraintEnd_toEndOf="@+id/verifymsg"
+        app:layout_constraintStart_toStartOf="@+id/verifymsg"
+        app:layout_constraintTop_toBottomOf="@+id/verifymsg" />-->
+
+   <!-- <EditText
+        android:id="@+id/passbox"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorpurple"
+        android:ems="10"
+        android:hint="Passsword"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/emaillbox"
+        app:layout_constraintStart_toStartOf="@+id/emaillbox"
+        app:layout_constraintTop_toBottomOf="@+id/emaillbox" />-->
+
+<!--
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/loginbutton"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />-->
+
+    <ImageView
+        android:id="@+id/editimage"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profileimage"
+        app:layout_constraintTop_toTopOf="@+id/profileimage"
+        app:layout_constraintVertical_bias="0.888"
+        app:srcCompat="@drawable/plus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

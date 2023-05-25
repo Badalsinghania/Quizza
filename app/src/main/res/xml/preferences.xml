@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:key="expandable"
+        android:title="@string/display">
+        <SeekBarPreference
+            android:key="seekbar_preference"
+            android:title="@string/brightness_level"
+            android:summary="@string/value_percentage" />
+        <Preference
+            android:key="intent_preference"
+            android:title="@string/wallpaper"
+            android:summary="@string/change_wallpaper" />
+        <ListPreference
+            android:key="list_preference"
+            android:title="@string/list_preference_title"
+            android:summary="@string/list_preference_summary"
+            android:entries="@array/list_entries"
+            android:entryValues="@array/list_values"
+            android:defaultValue="option1" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
